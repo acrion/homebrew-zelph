@@ -7,12 +7,12 @@ class Zelph < Formula
   
     def install
       libexec.install Dir["*"]
+      system "install_name_tool", "-add_rpath", "@loader_path", libexec/"zelph"
       bin.install_symlink libexec/"zelph"
     end
   
     test do
       output = pipe_output("#{bin}/zelph", ".exit\n")
-      assert_match version.to_s, output
+      assert_match "0.9.2", output
     end
   end
-  
