@@ -13,6 +13,6 @@ class Zelph < Formula
   
     test do
       output = pipe_output("#{bin}/zelph", ".exit\n")
-      assert_match "0.9.2", output
+      assert_match "interactive", output
     end
   end
