@@ -11,7 +11,7 @@ brew install zelph
 
 ## 🛠 Maintainer Guide (How to update)
 
-Steps to release a new version (e.g., `0.9.3`):
+Steps to release a new version (e.g., `0.9.5`):
 
 1.  Wait for the main [GitHub Release](https://github.com/acrion/zelph/releases) to be built.
 2.  Get the SHA256 checksum of the new `zelph-macos.zip`.:
@@ -20,6 +20,6 @@ Steps to release a new version (e.g., `0.9.3`):
     *   Update `sha256` with the checksum from step 2.
 4.  Commit and push:
     ```bash
-    git commit -am "Update to v0.9.3"
+    git commit -am "Update to v0.9.5"
     git push
     ```
