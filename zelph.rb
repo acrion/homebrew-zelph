@@ -1,8 +1,8 @@
 class Zelph < Formula
     desc "A sophisticated semantic network system for logical reasoning"
     homepage "https://zelph.org"
-    url "https://github.com/acrion/zelph/releases/download/v0.9.4/zelph-macos.zip"
-    sha256 "d4be100e6fb5a914ef4dc433387c0bc230e353f7ba46e18a6fbe1f8610d2df6d"
+    url "https://github.com/acrion/zelph/releases/download/v0.9.5/zelph-macos.zip"
+    sha256 "134081c3e5eb0a261f93b743290f9f5cccab5d56539a2386233b00dd14411a02"
     license "AGPL-3.0-or-later"
   
     def install
@@ -12,7 +12,7 @@ class Zelph < Formula
     end
   
     test do
-      output = pipe_output("#{bin}/zelph", ".exit\n")
-      assert_match "interactive", output
+      output = shell_output("#{bin}/zelph --version")
+      assert_match "Janet", output
     end
   end
