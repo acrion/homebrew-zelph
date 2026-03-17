@@ -12,7 +12,6 @@ class Zelph < Formula
     end
   
     test do
-      output = shell_output("#{bin}/zelph --version")
-      assert_match "Janet", output
+      system libexec/"zelph_tests"
     end
   end
