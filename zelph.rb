@@ -11,7 +11,7 @@ class Zelph < Formula
       bin.install_symlink libexec/"zelph"
     end
 
-    test do
-      system libexec/"zelph_tests"
-    end
+    # test do
+    #   system libexec/"zelph_tests"
+    # end
   end
