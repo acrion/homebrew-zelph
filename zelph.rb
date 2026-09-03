@@ -1,8 +1,8 @@
 class Zelph < Formula
     desc "A sophisticated semantic network system for logical reasoning"
     homepage "https://zelph.org"
-    url "https://github.com/acrion/zelph/releases/download/v0.9.9/zelph-macos.zip"
-    sha256 "279a8fdc70d17c4fd511ac59b4927ecda6e99e44aa7ebde6e175e8bb6f78f355"
+    url "https://github.com/acrion/zelph/releases/download/v1.0.0/zelph-macos.zip"
+    sha256 "25b1b8d10930fc9e131a8a88406083d6b6af3e52f8b59fbdb75940c2f59fe061"
     license "AGPL-3.0-or-later"
 
     def install
