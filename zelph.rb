@@ -1,8 +1,8 @@
 class Zelph < Formula
     desc "A sophisticated semantic network system for logical reasoning"
     homepage "https://zelph.org"
-    url "https://github.com/acrion/zelph/releases/download/v1.0.0/zelph-macos.zip"
-    sha256 "25b1b8d10930fc9e131a8a88406083d6b6af3e52f8b59fbdb75940c2f59fe061"
+    url "https://github.com/acrion/zelph/releases/download/v1.0.1/zelph-macos.zip"
+    sha256 "8e3dbf61150201580de412764274382420cb96374f4fb19347ed4e0e4dc93d9d"
     license "AGPL-3.0-or-later"
 
     def install
@@ -12,6 +12,6 @@ class Zelph < Formula
     end
 
     test do
-      system libexec/"zelph_tests"
+      system libexec/"zelph_tests", "--test-suite-exclude=slow"
     end
   end
